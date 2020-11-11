@@ -1,0 +1,9 @@
+body {
+	background-color: black;
+	padding-top: 5vh;
+}
+
+li.list-group-item{
+	background-color: rgb(18,18,18);
+	color: white;
+}

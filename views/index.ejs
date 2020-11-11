@@ -1,0 +1,23 @@
+<% layout('./layouts/boilerplate_index') %>
+
+<div class='container'>
+	<% if(result) { %>
+	<h3><span style='color:yellow'>| </span>Search result of '<%= title %>':</h3>
+	<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+		<% for(let i=0; i<result.length; i++) { %>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="card">
+			  <img class="card-img-top" src="<%= result[i].Poster %>">
+			  <div class="card-body">
+				<a href="/movie/<%= result[i].imdbID %>" class="btn btn-danger">More Information</a>
+			  </div>
+			</div>
+		</div>
+		<% } %>
+	</div>
+	<% } %>
+</div>
+
+
+
+
